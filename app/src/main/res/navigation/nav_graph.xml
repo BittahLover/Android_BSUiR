@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/basic_mode">
+
+    <fragment
+        android:id="@+id/basic_mode"
+        android:name="com.example.lab1.NumModeFragment"
+        tools:layout="@layout/fragment_num_mode" >
+        <action
+            android:id="@+id/action_basic_to_scientific_mode"
+            app:destination="@id/scientific_mode"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/scientific_mode"
+        android:name="com.example.lab1.SciModeFragment"
+        tools:layout="@layout/fragment_sci_mode" >
+        <action
+            android:id="@+id/action_scientific_to_basic_mode"
+            app:destination="@id/basic_mode"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+</navigation>

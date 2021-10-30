@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SciModeFragment">
+
+
+    <Button
+        android:id="@+id/buttonSin"
+        android:text="@string/sin"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLn"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCos"
+        android:text="@string/cos"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLog"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTan"
+        android:text="@string/tan"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLog"
+        android:text="@string/lg"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFact"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonLn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCos" />
+
+    <Button
+        android:id="@+id/buttonLn"
+        android:text="@string/ln"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPi"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSin" />
+
+    <Button
+        android:id="@+id/buttonFact"
+        android:text="@string/fact"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonLog"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTan" />
+
+    <Button
+        android:id="@+id/buttonPi"
+        android:text="@string/pi"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOpeningBr"
+        app:layout_constraintEnd_toStartOf="@+id/buttonExp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLn" />
+
+    <Button
+        android:id="@+id/buttonExp"
+        android:text="@string/exp"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClosingBr"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonPi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLog" />
+
+    <Button
+        android:id="@+id/buttonPow"
+        android:text="@string/pow"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSqrt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonExp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFact" />
+
+    <Button
+        android:id="@+id/buttonOpeningBr"
+        android:text="@string/opened"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClosingBr"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPi" />
+
+    <Button
+        android:id="@+id/buttonClosingBr"
+        android:text="@string/closed"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSqrt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonOpeningBr"
+        app:layout_constraintTop_toBottomOf="@+id/buttonExp" />
+
+    <Button
+        android:id="@+id/buttonSqrt"
+        android:text="@string/sqrt"
+        style="@style/DarkCalculatorButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonClosingBr"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="65dp" />
+
+    <Button
+        android:id="@+id/buttonToNum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/toNumMode"
+        android:textSize="@dimen/dimButtonText"
+        android:textColor="@color/colorWhitePanel"
+        android:background="@color/colorBlackPanel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
